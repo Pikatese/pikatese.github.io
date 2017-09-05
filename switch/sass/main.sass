@@ -1,0 +1,260 @@
+$text-color: #828181
+$light-color: lighten($text-color, 10%)
+$dark-color: darken($text-color, 10%)
+$green: #54d154
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700')
+
+html, body
+	width: 100%
+	margin: 0
+	padding: 0
+	font-family: Montserrat, sans-serif
+	font-weight: 400
+	line-height: 1.5
+	font-size: 15px	
+div
+	box-sizing: border-box	
+.container
+	max-width: 1100px
+	margin: 0 auto	
+// SECTION 1 HEADER
+header
+	background: url(../img/main-bg.jpg) no-repeat center top / cover
+	color: #fff
+	padding-bottom: 10px
+	max-width: 100%
+	background-size: 100%
+a, a:visited, a:active, a:focus, a:hover
+	color: #fff
+	text-decoration: none
+	background-color: transparent
+.collapse
+	.navbar-collapse
+		.on
+			position: absolute
+  		top: 0
+  		left: 0
+  		z-index: 10
+nav
+	float: left
+	.main-nav
+		padding: 0
+		margin: 0
+	li
+		a
+			margin-right: -20px
+			margin-top: -5px
+			font-size: 13px
+li.active
+	font-family: Montserrat, sans-serif
+	font-weight: 700
+	border-top: $green 5px solid
+	padding-top: 6px
+	padding-right: 0px
+	margin-right: -2px
+	a
+		text-decoration: none
+		color: #fff
+		font-size: 14px
+		padding: 0
+		margin: 0
+		text-align: center
+	&:hover
+		background-color: transparent	
+.nav
+	>li
+		>a:hover
+			background-color: transparent
+.navbar-toggle
+	color: #fff
+	border-radius: 10px	
+	float: left
+	padding: 0
+	.icon-bar 
+    background-color: #fff
+.navbar-collapse.in
+  overflow: hidden
+  max-height: none !important
+  height: auto !important
+
+
+.logo
+	padding-top: 8px
+	display: block
+//SEARCH
+#custom-search-form
+	margin: 0
+	margin-top: 5px
+	padding: 0
+	float: right
+	.search-query
+		background: rgba(255,255,255,0.8)
+		padding-right: 5px
+		padding-left: 10px
+		padding-top: 2px
+		padding-bottom: 2px
+		margin-bottom: 0
+		border-radius: 20px
+		border: none
+		color: #000
+		outline: none
+	button
+		border: 0
+		background: none
+		padding: 2px 5px
+		margin-top: 2px
+		position: relative
+		left: -28px
+		margin-bottom: 0;
+		border-radius: 10px
+		padding-bottom: 6px
+		i
+			color: #000
+			opacity: .5
+	&:focus
+		button 
+			z-index: 3
+// //search			
+h1
+	font-family: Montserrat, sans-serif
+	font-weight: 700
+	font-size: 55px
+	text-align: center
+	padding-top: 25%
+.button
+	display: block
+	margin: 0 auto
+	text-align: center
+	text-decoration: none
+	font-family: Montserrat, sans-serif
+	font-weight: 300
+	background-color: $green
+	border-radius: 20px
+a.button:hover, a.button:visited, a.button:focus
+	background-color: $green	
+.button-work
+	color: #fff
+	font-size: 22px
+	width: 217px
+	margin-top: 40px
+	text-transform: uppercase	
+	padding: 7px 22px
+a.button-scroll, a.button-scroll:hover, a.button-scroll:visited, a.button-scroll:active, a.button-scroll:focus
+	color: $dark-color
+	background: rgba(255,255,255,0.8)
+.button-scroll
+	font-size: 16px
+	padding: 3px 5px
+	width: 120px
+	margin-top: 8%
+	margin-bottom: 5px
+	i
+		font-size: 12px
+// SECTION 2 WHATWEDO			
+section
+	padding-top: 25px
+	h2
+		text-transform: uppercase
+		font-family: Montserrat, sans-serif
+		font-weight: 300
+		font-size: 21px
+		color: $text-color
+		text-align: center
+	hr	
+		display: block
+		width: 43px
+		height: 2px
+		background-color: $light-color
+		margin-top: 10px
+		border-top: none
+	p
+		text-align: center
+		color: $light-color
+		margin-top: -9px
+
+.item
+	padding: 30px
+	text-align: center
+	margin-top: 20px
+	img
+		display: block
+		margin: 0 auto
+	h3
+		font-family: Montserrat, sans-serif
+		font-weight: 700
+		font-size: 24px
+		font-weight: bold
+		color: $dark-color
+		padding-bottom: 10px
+	.button-more
+		width: 140px
+		font-size: 16px
+		padding: 8px 16px
+		font-family: Montserrat, sans-serif
+		font-weight: 400
+
+	// SECTION 2 WORK
+#ourlatestwork
+	background-color: $green
+	padding-bottom: 30px
+	img
+		margin: 10px 0
+		border-radius: 3px
+.work-pills
+	margin: 50px 0
+	display: block
+	text-align: center
+	ul
+		display: inline-block
+		li
+			margin-top: -1px
+			&.active
+				margin-top: -12px
+				color: #fff
+				a
+					background-color: #2b9b2b
+					padding: 5px 10px 6px
+					font-weight: 300
+					&:hover
+						background-color: #fff
+						color: #2b9b2b	
+					&:visited, &:focus		
+						background-color: #2b9b2b
+						color: #fff
+			a
+				background-color: #fff
+				padding: 5px 9px
+				color: #2b9b2b
+				border-radius: none
+				margin-bottom: 1px 
+				&:hover
+					background-color: #2b9b2b
+					color: #fff
+				&:visited, &:focus	
+					background-color: #fff
+					color: #2b9b2b	
+			&:first-of-type a
+				border-top-left-radius: 20px
+				border-bottom-left-radius: 20px	
+				padding-left: 15px
+				margin-right: 2px	
+			&:last-of-type a
+				border-top-right-radius: 20px
+				border-bottom-right-radius: 20px	
+				padding-right: 15px	
+.gallery
+	margin-bottom: 30px	
+.button-viewmore
+	width: 190px
+	padding: 10px 18px
+	margin: 30px auto 
+	a
+		font-size: 18px
+a.button-viewmore:hover, a.button-viewmore:visited, a.button-viewmore:focus
+	background-color: #2b9b2b	
+
+
+	// SECTION 6 TEAM
+#meettheteam
+	background-color: $green
+
