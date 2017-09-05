@@ -254,6 +254,10 @@ p {
   font-weight: 400;
 }
 
+.item a.button-more:hover, .item a.button-more:focus, .item a.button-more:visited {
+  background-color: #54d154;
+}
+
 #ourlatestwork {
   background-color: #54d154;
   padding-bottom: 30px;
