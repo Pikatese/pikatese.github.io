@@ -168,11 +168,11 @@ h1 {
   border-radius: 20px;
 }
 
-a.button:hover, a.button:visited, a.button:focus {
+a.button-work:hover, a.button-work:visited, a.button-work:focus {
   background-color: #54d154;
 }
 
-.button-work {
+a.button-work {
   color: #fff;
   font-size: 22px;
   width: 217px;
@@ -402,8 +402,67 @@ a.button-viewmore, a.button-viewmore:hover, a.button-viewmore:visited, a.button-
 
 #ourhappyclients {
   background: #f7f7f7;
+  padding-bottom: 30px;
+}
+
+.logos-1, .logos-2 {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+}
+
+.logos-1 img, .logos-2 img {
+  display: block;
+  margin: 0px;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+a.button-clients, a.button-clients:focus, a.button-clients:hover, a.button-clients:visited {
+  width: 170px;
+  padding: 8px 16px;
+  background: #e3e2e2;
+  color: #828181;
+}
+
+a.button-clients i, a.button-clients:focus i, a.button-clients:hover i, a.button-clients:visited i {
+  opacity: .8;
+  padding-left: 20px;
 }
 
 #meettheteam {
   background-color: #54d154;
+}
+
+#meettheteam .members {
+  margin-bottom: 30px;
+}
+
+#meettheteam .members .member {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+#meettheteam .members .member hr {
+  border: none;
+  background: #289728;
+  height: 80px;
+  width: 2px;
+}
+
+#meettheteam .members .member p {
+  color: #fff;
+}
+
+#meettheteam .members .member p img {
+  display: block;
+  margin: 0 auto;
+}
+
+.2ndwork {
+  background-color: #289728;
+  padding-bottom: 20px;
+}
+
+footer {
+  border-color: #686868;
 }
