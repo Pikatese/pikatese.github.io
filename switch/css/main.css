@@ -202,7 +202,7 @@ section {
   padding-top: 25px;
 }
 
-section h2 {
+#whatwedo h2 {
   text-transform: uppercase;
   font-family: Montserrat, sans-serif;
   font-weight: 300;
@@ -211,7 +211,7 @@ section h2 {
   text-align: center;
 }
 
-section hr {
+#whatwedo hr {
   display: block;
   width: 43px;
   height: 2px;
@@ -220,7 +220,7 @@ section hr {
   border-top: none;
 }
 
-section p {
+#whatwedo p {
   text-align: center;
   color: #9b9b9b;
   margin-top: -9px;
@@ -451,6 +451,7 @@ a.button-clients i, a.button-clients:focus i, a.button-clients:hover i, a.button
 
 #meettheteam .members .member p {
   color: #fff;
+  text-align: center;
 }
 
 #meettheteam .members .member p img {
