@@ -202,7 +202,7 @@ section {
   padding-top: 25px;
 }
 
-#whatwedo h2 {
+h2 {
   text-transform: uppercase;
   font-family: Montserrat, sans-serif;
   font-weight: 300;
@@ -211,7 +211,7 @@ section {
   text-align: center;
 }
 
-#whatwedo hr {
+hr {
   display: block;
   width: 43px;
   height: 2px;
@@ -220,7 +220,7 @@ section {
   border-top: none;
 }
 
-#whatwedo p {
+p {
   text-align: center;
   color: #9b9b9b;
   margin-top: -9px;
@@ -459,11 +459,81 @@ a.button-clients i, a.button-clients:focus i, a.button-clients:hover i, a.button
   margin: 0 auto;
 }
 
-.2ndwork {
-  background-color: #289728;
-  padding-bottom: 20px;
+#ndwork {
+  background-color: #33bf33;
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+#ndwork a {
+  box-shadow: 0px 3px 8px #686868;
+  -moz-box-shadow: 0px 3px 8px #686868;
+  -webkit-box-shadow: 0px 3px 6px #686868;
 }
 
 footer {
-  border-color: #686868;
+  background: #424141;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 60px;
+}
+
+footer .post {
+  padding: 2px;
+}
+
+footer .post h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+footer .post hr {
+  width: 40px;
+  padding: 0;
+  margin-top: 0;
+}
+
+footer .post h2, footer .post hr, footer .post p {
+  opacity: .5;
+}
+
+footer .post .left {
+  float: left;
+  clear: left;
+}
+
+footer .post .left img {
+  padding-left: 60px;
+  padding-bottom: 15px;
+}
+
+footer .post .right {
+  float: right;
+}
+
+footer .post .right p {
+  padding: 5px 0 2px 0;
+  margin: 0;
+}
+
+footer .post .right .label {
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  padding: 4px 8px;
+  float: left;
+}
+
+footer .post .right .label.label-warning {
+  background-color: #ffba00;
+}
+
+footer .post .right .label.label-primary {
+  background-color: #089dea;
+}
+
+footer .post .right .label.label-danger {
+  background-color: #f34d04;
 }

@@ -156,24 +156,25 @@ a.button-scroll, a.button-scroll:hover, a.button-scroll:visited, a.button-scroll
 section
 	padding-top: 25px
 #whatwedo	
-	h2
-		text-transform: uppercase
-		font-family: Montserrat, sans-serif
-		font-weight: 300
-		font-size: 21px
-		color: $text-color
-		text-align: center
-	hr	
-		display: block
-		width: 43px
-		height: 2px
-		background-color: $light-color
-		margin-top: 10px
-		border-top: none
-	p
-		text-align: center
-		color: $light-color
-		margin-top: -9px
+
+h2
+	text-transform: uppercase
+	font-family: Montserrat, sans-serif
+	font-weight: 300
+	font-size: 21px
+	color: $text-color
+	text-align: center
+hr	
+	display: block
+	width: 43px
+	height: 2px
+	background-color: $light-color
+	margin-top: 10px
+	border-top: none
+p
+	text-align: center
+	color: $light-color
+	margin-top: -9px
 
 .item
 	padding: 30px
@@ -329,12 +330,58 @@ a.button-clients, a.button-clients:focus, a.button-clients:hover, a.button-clien
 		  img
 		  	display: block	
 		  	margin: 0 auto
-.2ndwork 
-	background-color: darken($green, 20%)
-	padding-bottom: 20px
+#ndwork 
+	background-color: darken($green, 10%)
+	padding-top: 0
+	padding-bottom: 40px
+	a
+		box-shadow: 0px 3px 8px $dark-color
+		-moz-box-shadow: 0px 3px 8px $dark-color
+		-webkit-box-shadow: 0px 3px 6px $dark-color
+		
 		
 			
 	// FOOTER
 footer	
-	border-color: $dark-color	
+	background: darken($dark-color, 15%)	
+	color: #fff
+	text-align: center
+	font-size: 15px
+	padding-bottom: 60px
+	.post
+		padding: 2px
+		h2
+			text-transform: uppercase
+			font-size: 16px
+		hr
+			width: 40px	
+			padding: 0
+			margin-top: 0
+		h2, hr, p
+			opacity: .5		
+		.left
+			float: left
+			clear: left
+			img
+				padding-left: 60px
+				padding-bottom: 15px
+		.right
+			float: right
+			p
+				padding: 5px 0 2px 0
+				margin: 0
+			.label
+				border-radius: 4px
+				text-transform: uppercase
+				font-family: Montserrat, sans-serif
+				font-weight: 300
+				padding: 4px 8px
+				float: left		
+				margin-top:
+				&.label-warning
+					background-color: #ffba00
+				&.label-primary
+					background-color: #089dea
+				&.label-danger
+					background-color: #f34d04	
 
