@@ -352,6 +352,58 @@ a.button-viewmore, a.button-viewmore:hover, a.button-viewmore:visited, a.button-
   background-color: #2b9b2b;
 }
 
+.carousel-inner {
+  padding-bottom: 60px;
+}
+
+.carousel-inner .item {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.feedback p {
+  color: #303030;
+}
+
+.feedback blockquote {
+  width: 43%;
+  border: none;
+  margin: 0 auto;
+}
+
+.feedback blockquote img {
+  float: left;
+}
+
+.feedback blockquote p {
+  float: right;
+  padding-top: 10px;
+}
+
+.feedback blockquote span {
+  float: left;
+}
+
+.feedback blockquote span.gray {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+  filter: none !important;
+}
+
+.carousel-control.left span, .carousel-control.right span {
+  color: #ccc;
+  border: none;
+}
+
+#ourhappyclients {
+  background: #f7f7f7;
+}
+
 #meettheteam {
   background-color: #54d154;
 }
