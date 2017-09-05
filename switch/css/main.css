@@ -537,3 +537,8 @@ footer .post .right .label.label-primary {
 footer .post .right .label.label-danger {
   background-color: #f34d04;
 }
+
+p.address {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
