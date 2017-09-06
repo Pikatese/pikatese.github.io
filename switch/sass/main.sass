@@ -4,7 +4,7 @@ $dark-color: darken($text-color, 10%)
 $green: #54d154
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700')
 
-html
+html, body
 	width: 100%
 	margin: 0
 	padding: 0
@@ -331,9 +331,10 @@ a.button-clients, a.button-clients:focus, a.button-clients:hover, a.button-clien
 			p
 				color: #fff
 				text-align: center
-		  img
+			img
 		  	display: block	
 		  	margin: 0 auto
+		  	max-width: 100%
 #ndwork 
 	background-color: darken($green, 10%)
 	padding-top: 0
@@ -352,6 +353,8 @@ a.button-clients, a.button-clients:focus, a.button-clients:hover, a.button-clien
 	text-align: center
 	font-size: 15px
 	padding-bottom: 60px
+	img
+		margin-bottom: 20px
 	.post
 		padding: 2px
 		h2

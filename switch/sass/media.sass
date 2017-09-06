@@ -4,11 +4,22 @@
 	/**/
 	.button-scroll
 		margin-top: 6%
-	#contactus .post .left img
-		margin-left: 0
+	#contactus 
+		.posts
+			margin: 0 auto
+			width: 100%
+			.post
+				.left
+				img
+					padding-left: 0
+					display: block
+					margin: 0 auto
 	#contactus .post .right p
-		font-size: 12px		
-
+		font-size: 16px
+		span
+			.label
+				font-size: 16px					
+	
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
 	/**/
@@ -48,20 +59,99 @@
 	.collapse.in
 		display:block !important
 
-#custom-search-form
-	button
-		margin-top: 0	
+	#custom-search-form
+		button
+			margin-top: 0	
+	.feedback 
+		blockquote
+			width: 40%
+	#meettheteam .members .member p
+		font-size: 12px		
+	#contactus 
+		.posts
+			margin: 0 auto
+			width: 70%
+			.post
+				.left
+				img
+					padding-left: 0
+					display: block
+					margin: 0 auto
+	#contactus .post .right 
+		p
+			font-size: 15px
+		.label
+				font-size: 15px					
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 880px)
+	/**/
+	#contactus 
+		.posts
+			margin: 0 auto
+			width: 75%
+			.post
+				.left
+				img
+					padding-left: 0
+					display: block
+					margin: 0 auto
+	#contactus .post .right 
+		p
+			font-size: 14px
+		.label
+				font-size: 14px	
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px)
 	/**/
 	h1
 		font-size: 40px
 		padding-top: 8%	
-	.button-work
+	a.button-work
 		margin-top: 3%	
-	.button-scroll
+	a.button-scroll
 		display: none
+	#custom-search-form	
+		display: none
+
+	.feedback 
+		blockquote
+			width: 47%	
+	#meettheteam .members .member p
+		font-size: 16px	
+	#ndwork
+		a.button-work
+			margin-top: 5%	
+	#contactus 
+		.posts
+			margin: 0 auto
+			width: 50%
+			.post
+				.left
+				img
+					padding-left: 0
+					display: block
+					margin: 0 auto
+	#contactus .post .right p
+		font-size: 17px
+		span
+			.label
+				font-size: 17px									
+
+@media only screen and (max-width: 675px)
+	/**/
+	h1
+		font-size: 40px
+		padding-top: 7%	
+	a.button-work
+		margin-top: 0
+	.feedback 
+		blockquote
+			width: 65%
+	#contactus 
+		.posts
+			margin: 0 auto
+			width: 70%		
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
@@ -74,12 +164,49 @@
 		font-size: 30px
 		padding-top: 0px	
 		margin-top: -10px
-	.button-work
-		width: 185px
-		font-size: 18px	
-		margin-top: 0
-	.button-scroll
-		display: none	
+	a.button-work
+		width: 170px
+		font-size: 15px	
+		margin-top: 5px
+	.feedback 
+		blockquote
+			width: 90%
+	#ndwork
+		a.button-work
+			margin-top: 8%	
+	#contactus 
+		.posts
+			margin: 0 auto
+			width: 90%				
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 375px)
+	/**/	
+	a.button-work
+		width: 170px
+		font-size: 15px	
+		margin-top: 5px
+	.feedback 
+		blockquote
+			width: 100%
+			font-size: 13px
+			img
+				width: 30%
+			p
+				span
+					&.gray
+						font-size: 13px	
+	#ndwork
+		a.button-work
+			margin-top: 13%				
+	#contactus 
+		.posts
+			margin: 0 auto
+			width: 100%		
+	#contactus .post .right p
+		font-size: 15px
+		span
+			.label
+				font-size: 15px						
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -95,26 +222,9 @@
 	.carousel-inner
 		.item
 			width: 90%
-	.feedback 
-		blockquote
-			width: 100%
-			font-size: 13px
-			img
-				width: 35%
-			p
-				span
-					&.gray
-						font-size: 13px
-	#ndwork
-		.button-work
-			margin-top: 13%				
-	#contactus .post .left
-		img
-			padding-left: 0
-			display: block
-			margin: 0 auto
 	#contactus .post .right p
-		font-size: 16px
+		font-size: 14px
 		span
 			.label
-				font-size: 17px		
+				font-size: 14px
+	
