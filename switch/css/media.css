@@ -107,9 +107,36 @@
     padding-top: 0px;
     margin-top: -10px;
   }
-  .button-work {
+  a.button-work {
     width: 170px;
     font-size: 13px;
     margin-top: 0;
+  }
+  .carousel-inner .item {
+    width: 90%;
+  }
+  .feedback blockquote {
+    width: 100%;
+    font-size: 13px;
+  }
+  .feedback blockquote img {
+    width: 35%;
+  }
+  .feedback blockquote p span.gray {
+    font-size: 13px;
+  }
+  #ndwork .button-work {
+    margin-top: 13%;
+  }
+  #contactus .post .left img {
+    padding-left: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  #contactus .post .right p {
+    font-size: 16px;
+  }
+  #contactus .post .right p span .label {
+    font-size: 17px;
   }
 }

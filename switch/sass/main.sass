@@ -4,7 +4,7 @@ $dark-color: darken($text-color, 10%)
 $green: #54d154
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700')
 
-html, body
+html
 	width: 100%
 	margin: 0
 	padding: 0
@@ -12,6 +12,7 @@ html, body
 	font-weight: 400
 	line-height: 1.5
 	font-size: 15px	
+	overflow-x: hidden
 body
 	-webkit-box-sizing: border-box
    box-sizing: border-box
@@ -301,9 +302,10 @@ a.button-viewmore, a.button-viewmore:hover, a.button-viewmore:visited, a.button-
 	padding-bottom: 30px
 	img
 		display: block
-		margin: 0px
+		margin: 0px auto
 		padding: 40px 0px
 		text-align: center
+		max-width: 100%
 a.button-clients, a.button-clients:focus, a.button-clients:hover, a.button-clients:visited
 	width: 170px
 	padding: 8px 16px	
@@ -369,6 +371,7 @@ a.button-clients, a.button-clients:focus, a.button-clients:hover, a.button-clien
 			img
 				padding-left: 60px
 				padding-bottom: 15px
+				float: right
 		.right
 			float: right
 			p
@@ -419,6 +422,9 @@ footer
 		color: #000
 	hr
 		background-color: #000
+	img
+		max-width: 100%	
+		padding: 10px
 .design
 	background-color: #000	
 	text-align: center	
