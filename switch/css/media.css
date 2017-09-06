@@ -32,8 +32,8 @@
     padding: 0;
   }
   h1 {
-    font-size: 40px;
-    padding-top: 20%;
+    font-size: 55px;
+    padding-top: 18%;
   }
   .navbar-header {
     float: none;
@@ -66,8 +66,8 @@
   .collapse.in {
     display: block !important;
   }
-  #custom-search-form button {
-    margin-top: 0;
+  #custom-search-form button i {
+    display: none;
   }
   .feedback blockquote {
     width: 40%;
@@ -95,6 +95,9 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px) {
   /**/
+  a.button-scroll {
+    margin-top: 5%;
+  }
   #contactus .posts {
     margin: 0 auto;
     width: 75%;
