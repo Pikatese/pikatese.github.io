@@ -293,14 +293,14 @@ p {
   font-weight: 300;
 }
 
-.work-pills ul li.active a:hover {
-  background-color: #fff;
-  color: #2b9b2b;
-}
-
 .work-pills ul li.active a:visited, .work-pills ul li.active a:focus {
   background-color: #2b9b2b;
   color: #fff;
+}
+
+.work-pills ul li.active a:hover {
+  background-color: #fff;
+  color: #2b9b2b;
 }
 
 .work-pills ul li a {
@@ -311,14 +311,14 @@ p {
   margin-bottom: 1px;
 }
 
-.work-pills ul li a:hover {
-  background-color: #2b9b2b;
-  color: #fff;
-}
-
 .work-pills ul li a:visited, .work-pills ul li a:focus {
   background-color: #fff;
   color: #2b9b2b;
+}
+
+.work-pills ul li a:hover {
+  background-color: #2b9b2b;
+  color: #fff;
 }
 
 .work-pills ul li:first-of-type a {
