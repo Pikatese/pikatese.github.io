@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,700|Montserrat:200,300,400|Playfair+Display:400,700");
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  -webkit-box-sizing-box-sizing: border-box;
+  -webkit-box-sizing-min-width: 320px;
+  -webkit-box-sizing-padding: 20px;
+  -webkit-box-sizing-width: 100%;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1250px;
+  width: 95%;
+  margin: 0 auto;
+  letter-spacing: 1.3px;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  background: url(../img/header-bg.jpg) no-repeat center top/cover;
+  max-width: 100%;
+  overflow: auto;
+  color: #fff;
+  padding-bottom: 9%;
+}
+
+.navbar-toggle .icon-bar {
+  color: #fff;
+  background-color: #fff;
+}
+
+#mainmenu {
+  margin: 0 auto;
+}
+
+.top-line {
+  background: rgba(86, 83, 76, 0.5);
+  height: 60px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.top-line .nav {
+  margin: 0 auto;
+  display: block;
+  font-family: Alegreya, serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.top-line .nav li {
+  padding-right: 4px;
+}
+
+.top-line .nav li a {
+  color: #fff;
+  letter-spacing: 2.5px;
+}
+
+.top-line .nav li a span {
+  padding-left: 27px;
+}
+
+.top-line .nav li a:hover, .top-line .nav li a:focus, .top-line .nav li a:visited {
+  background: none;
+}
+
+.top-line .social_icons {
+  margin-top: 17px;
+}
+
+.top-line .social_icons .fa {
+  padding-right: 30px;
+  font-size: 17px;
+}
+
+.titles {
+  text-align: center;
+}
+
+.titles h1 {
+  font-size: 92px;
+  font-family: Playfair Display, serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-top: 9%;
+}
+
+.titles hr {
+  margin-top: 3%;
+  width: 200px;
+  height: 1.6px;
+  background-color: #ccc;
+  opacity: .7;
+}
+
+.titles img {
+  margin-top: -10px;
+}
+
+.titles p {
+  padding: 35px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 2px;
+}
+
+.titles a.button-menu {
+  width: 180px;
+  margin: 0 auto;
+  padding: 9px;
+  display: block;
+  font-family: Alegreya, serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: rgba(86, 83, 76, 0.5);
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+}
+
+.borderline img#nom {
+  display: block;
+  margin-top: -60px;
+}
+
+#artofcakes {
+  margin-top: 10px;
+  background-image: url(../img/bg.jpg);
+  text-align: center;
+}
+
+#artofcakes h2, #artofcakes h4 {
+  font-family: Alegreya, serif;
+  font-weight: 700;
+  color: #56534c;
+}
+
+#artofcakes h2 {
+  padding-top: 2%;
+  font-size: 35px;
+}
+
+#artofcakes h4 {
+  padding: 5%;
+  font-size: 24px;
+}
+
+#artofcakes h5 {
+  text-transform: uppercase;
+  color: #a47d5e;
+  font-family: Alegreya, serif;
+  font-weight: 700;
+  padding-bottom: 4%;
+}
+
+#artofcakes p {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+
+.mainchef span {
+  font-family: Alegreya, serif;
+  font-size: 24px;
+  border-top: 1px solid #d7d5ca;
+  border-bottom: 1px solid #d7d5ca;
+  padding: 10px;
+}
+
+.mainchef img#cite {
+  display: block;
+  margin: 30px auto;
+  width: 60%;
+}
+
+.piccakes {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.piccakes .vector {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  left: 32%;
+  top: 30%;
+  z-index: 1;
+  text-transform: uppercase;
+  font-family: Alegreya, serif;
+  font-size: 24px;
+  color: #d0bf96;
+}
+
+.piccakes .vector h3 {
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+}
+
+.piccakes .vector img {
+  display: block;
+  position: absolute;
+  max-width: 100%;
+  margin: 0 auto;
+  opacity: .97;
+}
+
+.piccakes img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-top: 25px;
+}
