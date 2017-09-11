@@ -284,13 +284,14 @@ section p {
 .carousel-control {
   background-image: none;
   background: none;
-  font-size: 15px;
-  color: #d0bf96;
+  font-size: 18px;
+  font-weight: bold;
+  color: #b09450;
   border: 1px solid #d0bf96;
   border-radius: 23px 23px 23px 23px;
-  height: 25px;
-  width: 25px;
-  margin-top: 30px;
+  height: 30px;
+  width: 30px;
+  margin-top: 22px;
 }
 
 .media-carousel .carousel-control.left {
@@ -321,4 +322,42 @@ section p {
 
 .media-carousel img {
   width: 250px;
+}
+
+.readyin {
+  background-image: url(../img/readyin.png);
+  background-size: cover;
+  margin-top: 40%;
+  vertical-align: middle;
+  padding-bottom: 5%;
+}
+
+.readyin h5 {
+  margin-bottom: -10%;
+  padding-bottom: 0;
+  padding-top: 17%;
+}
+
+.readyin p {
+  font-family: Alegreya, serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.readyin p span.bigtext {
+  font-size: 90px;
+  color: #dfc691;
+  font-weight: 700;
+}
+
+.readyin p span.down {
+  vertical-align: 2%;
+}
+
+.readyin p span.mins {
+  display: block;
+  position: absolute;
+  top: 82%;
+  padding-left: 35%;
+  color: #9d998d;
 }
