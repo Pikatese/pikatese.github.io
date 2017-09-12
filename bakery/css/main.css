@@ -101,6 +101,15 @@ header {
   font-size: 17px;
 }
 
+a.button {
+  width: 180px;
+  margin: 0 auto;
+  padding: 9px;
+  display: block;
+  font-family: Alegreya, serif;
+  text-transform: uppercase;
+}
+
 .titles {
   text-align: center;
 }
@@ -135,14 +144,8 @@ header {
 }
 
 .titles a.button-menu {
-  width: 180px;
-  margin: 0 auto;
-  padding: 9px;
-  display: block;
-  font-family: Alegreya, serif;
   font-weight: 400;
   font-size: 14px;
-  text-transform: uppercase;
   background: rgba(86, 83, 76, 0.5);
   border: 1px dashed rgba(255, 255, 255, 0.4);
 }
@@ -371,7 +374,7 @@ section p {
 }
 
 #breakfast {
-  padding-top: 3%;
+  padding-top: 4%;
   background-image: url(../img/bg-4.jpg);
   background-size: cover;
   text-align: center;
@@ -383,6 +386,10 @@ section p {
 
 #breakfast .breakfastlist h5 {
   color: #c8a593;
+}
+
+#breakfast .breakfastlist .menuitem {
+  margin: 12% 0;
 }
 
 #breakfast .breakfastlist .menuitem p {
@@ -400,4 +407,31 @@ section p {
   background-size: cover;
   padding: 20px 45px 20px 20px;
   text-align: center;
+}
+
+#breakfast .papermenu span {
+  padding: 6% 20% 0%;
+  font-family: Alegreya, serif;
+  font-weight: 700;
+  color: #56534c;
+}
+
+#breakfast .papermenu img {
+  margin: 0 0 10%;
+}
+
+#breakfast .papermenu h2 {
+  margin: 2% 0;
+}
+
+#breakfast .papermenu p {
+  margin: 12% 0;
+}
+
+#breakfast .papermenu a.button-read {
+  border: 1px solid #9e9c93;
+  color: #a47d5e;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 17% auto;
 }
