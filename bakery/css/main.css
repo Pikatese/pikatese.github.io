@@ -35,6 +35,7 @@ div {
   width: 95%;
   margin: 0 auto;
   letter-spacing: 1.3px;
+  text-align: center;
 }
 
 a, a:hover {
@@ -63,7 +64,6 @@ header {
   background: rgba(86, 83, 76, 0.5);
   height: 60px;
   padding-top: 6px;
-  text-align: center;
 }
 
 .top-line .nav {
@@ -110,10 +110,6 @@ a.button {
   text-transform: uppercase;
 }
 
-.titles {
-  text-align: center;
-}
-
 .titles h1 {
   font-size: 92px;
   font-family: Playfair Display, serif;
@@ -158,7 +154,6 @@ a.button {
 #artofcakes {
   margin-top: 10px;
   background-image: url(../img/bg-2.jpg);
-  text-align: center;
 }
 
 section h2, section h3, section h4 {
@@ -191,6 +186,10 @@ section p {
   font-size: 14px;
 }
 
+section img {
+  max-width: 100%;
+}
+
 .mainchef span {
   font-family: Alegreya, serif;
   font-size: 24px;
@@ -206,7 +205,6 @@ section p {
 }
 
 .piccakes {
-  text-align: center;
   margin-top: 10px;
   padding-top: 30px;
   margin: 0 auto;
@@ -248,18 +246,20 @@ section p {
 
 #tastypancakes {
   margin-top: 10px;
+  padding: 7% 0;
   background-image: url(../img/bg-3.jpg);
   background-size: cover;
   text-align: center;
 }
 
 #tastypancakes .pan-panel {
-  background-image: url(../img/panpan-bg.jpg);
-  background-size: cover;
-  margin-top: 13%;
+  background-image: url(../img/panpan-bg.png);
+  background-size: 100%;
+  margin-top: 15%;
   text-align: left;
   padding-left: 54%;
   padding-right: 7%;
+  padding-bottom: 2%;
 }
 
 #tastypancakes .pan-panel h2 {
@@ -377,36 +377,35 @@ section p {
   padding-top: 4%;
   background-image: url(../img/bg-4.jpg);
   background-size: cover;
-  text-align: center;
 }
 
-#breakfast .breakfastlist h2, #breakfast .breakfastlist h3 {
+#breakfast .breakfast-list h2, #breakfast .breakfast-list h3 {
   color: #fff;
 }
 
-#breakfast .breakfastlist h5 {
+#breakfast .breakfast-list h5 {
   color: #c8a593;
 }
 
-#breakfast .breakfastlist .menuitem {
+#breakfast .breakfast-list .menuitem {
   margin: 12% 0;
 }
 
-#breakfast .breakfastlist .menuitem p {
+#breakfast .breakfast-list .menuitem p {
   color: #c2beba;
 }
 
-#breakfast .breakfastlist .menuitem span {
+#breakfast .breakfast-list .menuitem span {
   color: #d0bf96;
   font-family: Alegreya, serif;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 #breakfast .papermenu {
   background-image: url(../img/mp-bg.png);
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   padding: 20px 45px 20px 20px;
-  text-align: center;
 }
 
 #breakfast .papermenu span {
@@ -434,4 +433,90 @@ section p {
   font-weight: 700;
   font-size: 18px;
   margin: 17% auto;
+}
+
+#jibarito {
+  padding-top: 1%;
+  background-color: #f3f1e9;
+}
+
+#jibarito .section_title {
+  background-image: url(../img/mill.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 3.5%;
+}
+
+#jibarito .section_title h5 {
+  padding-bottom: 10px;
+}
+
+.jib-list .jib-item {
+  padding-bottom: 15%;
+}
+
+.jib-list .jib-item h4 {
+  color: #a47d5e;
+  padding: 0;
+}
+
+.jib-list .jib-item p {
+  font-size: 13px;
+}
+
+.sandwich {
+  margin-top: 8%;
+  background-image: url(../img/sandwich.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.sandwich a.button-recipe {
+  color: #dfc691;
+  width: 160px;
+  padding: 12px;
+  font-weight: 700;
+  background-color: #fff;
+  border: 1px dashed #dfc691;
+  float: left;
+  margin-left: -10%;
+  margin-top: 300%;
+}
+
+.sandwich .readyin {
+  margin: -4% 0;
+  margin-right: 9px;
+  padding: 0;
+  background: none;
+  background: rgba(255, 255, 255, 0.8);
+  width: 180px;
+  height: 180px;
+  max-width: 200px;
+}
+
+.sandwich .readyin span.bigtext {
+  font-size: 70px;
+  color: #56534c;
+  margin-bottom: 10px;
+}
+
+.sandwich .readyin span.mins {
+  position: relative;
+  padding: 0;
+  margin-top: -10%;
+}
+
+.sandwich .readyin:first-child {
+  margin-top: -14%;
+}
+
+.sandwich .readyin:last-child {
+  background-image: url(../img/readyin.png);
+  background-size: 100%;
+}
+
+.sandwich .readyin:last-child span.bigtext {
+  font-size: 90px;
+  color: #dfc691;
 }
