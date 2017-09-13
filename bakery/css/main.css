@@ -66,7 +66,7 @@ header {
   padding-top: 6px;
 }
 
-.top-line .nav {
+.nav {
   margin: 0 auto;
   display: block;
   font-family: Alegreya, serif;
@@ -75,28 +75,28 @@ header {
   letter-spacing: 1px;
 }
 
-.top-line .nav li {
+.nav li {
   padding-right: 4px;
 }
 
-.top-line .nav li a {
+.nav li a {
   color: #fff;
   letter-spacing: 2.5px;
 }
 
-.top-line .nav li a span {
+.nav li a span {
   padding-left: 27px;
 }
 
-.top-line .nav li a:hover, .top-line .nav li a:focus, .top-line .nav li a:visited {
+.nav li a:hover, .nav li a:focus, .nav li a:visited {
   background: none;
 }
 
-.top-line .social_icons {
+.social_icons {
   margin-top: 17px;
 }
 
-.top-line .social_icons .fa {
+.social_icons .fa {
   padding-right: 30px;
   font-size: 17px;
 }
@@ -519,4 +519,12 @@ section img {
 .sandwich .readyin:last-child span.bigtext {
   font-size: 90px;
   color: #dfc691;
+}
+
+footer {
+  background-color: #f3f1e9;
+}
+
+footer .nav li a {
+  color: #56534c;
 }
