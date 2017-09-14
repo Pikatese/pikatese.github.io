@@ -167,8 +167,17 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 523px) {
   /**/
+  .titles h1 {
+    font-size: 3.4375em;
+  }
   .titles p {
-    margin: 0;
+    padding: 3%;
+  }
+  .titles a.button-menu {
+    margin-bottom: 8%;
+  }
+  .mainchef span {
+    padding: 0;
   }
   .piccakes .vector {
     width: 190px;
@@ -182,6 +191,12 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 375px) {
   /**/
+  .mainchef span {
+    padding: 0;
+  }
+  .mainchef img {
+    width: 30%;
+  }
   .piccakes .vector {
     width: 160px;
     height: 160px;
