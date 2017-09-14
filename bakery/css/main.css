@@ -263,8 +263,8 @@ section img {
 
 #tastypancakes .pan-panel p {
   font-size: 0.6875em;
-  padding-top: 30px;
-  padding-bottom: 90px;
+  padding-top: 10%;
+  padding-bottom: 30%;
 }
 
 .carousel {
@@ -274,6 +274,7 @@ section img {
 
 .carousel .thumbnail {
   border: none;
+  background-color: transparent;
 }
 
 .media-carousel {
@@ -293,7 +294,7 @@ section img {
   border-radius: 23px 23px 23px 23px;
   height: 30px;
   width: 30px;
-  margin-top: 22px;
+  margin-top: 7%;
 }
 
 .media-carousel .carousel-control.left {
@@ -324,6 +325,7 @@ section img {
 
 .media-carousel img {
   width: 250px;
+  max-width: 100%;
 }
 
 .readyin {
@@ -357,10 +359,10 @@ section img {
 }
 
 .readyin p span.mins {
-  display: block;
-  position: absolute;
   top: 82%;
-  padding-left: 35%;
+  display: table;
+  text-align: center;
+  margin: -14% auto 0;
   color: #9d998d;
 }
 
