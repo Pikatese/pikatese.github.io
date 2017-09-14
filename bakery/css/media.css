@@ -125,6 +125,10 @@
     padding: 7% 0;
     margin-bottom: 8%;
   }
+  .readyin {
+    margin-top: -10%;
+    margin-left: -25%;
+  }
   .carousel {
     display: none;
   }
@@ -147,6 +151,7 @@
   }
   #tastypancakes .pan-panel {
     background-size: cover;
+    margin-top: 0;
   }
   #tastypancakes .pan-panel h2 {
     padding-top: 5%;
@@ -158,9 +163,25 @@
   #tastypancakes .pan-panel p {
     font-size: 0.625em;
     padding-top: 0;
+    padding-right: 6%;
   }
   .readyin {
-    display: none;
+    margin-top: -10%;
+    margin-left: -25%;
+  }
+  .readyin h5 {
+    padding-bottom: -10%;
+    margin-bottom: -20%;
+    font-size: 0.75em;
+  }
+  .readyin p {
+    padding: -10%;
+  }
+  .readyin p span.bigtext {
+    font-size: 3.75em;
+  }
+  .readyin p span.mins {
+    margin: -20% auto 0;
   }
 }
 
@@ -178,6 +199,31 @@
   }
   .mainchef span {
     padding: 0;
+  }
+  #tastypancakes {
+    background-image: url(../img/panpan-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 19%;
+    padding-right: 0;
+    margin: 0;
+  }
+  #tastypancakes .pan-panel {
+    background: none;
+    width: 130%;
+  }
+  #tastypancakes .pan-panel h2 {
+    margin-top: -15%;
+    font-size: 1.875em;
+  }
+  #tastypancakes .pan-panel p {
+    margin-bottom: -12%;
+    padding-bottom: 0;
+    font-size: 0.625em;
+  }
+  #tastypancakes .readyin {
+    display: none;
   }
   .piccakes .vector {
     width: 190px;
@@ -202,7 +248,14 @@
     height: 160px;
   }
   .piccakes .vector h3 {
-    font-size: 0.9375em;
+    font-size: 1em;
+  }
+  #tastypancakes .pan-panel {
+    padding-left: 43%;
+  }
+  #tastypancakes .pan-panel h2 {
+    font-size: 1.5625em;
+    margin-top: -13%;
   }
 }
 
