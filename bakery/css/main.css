@@ -76,7 +76,7 @@ header {
 }
 
 .nav li {
-  padding-right: 3px;
+  padding-right: 0%;
 }
 
 .nav li a {
@@ -97,7 +97,7 @@ header {
 }
 
 .social_icons .fa {
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 a.button {
@@ -204,7 +204,7 @@ section img {
 }
 
 .piccakes {
-  margin: 0 auto 11%;
+  margin: 2% auto 11%;
   position: relative;
 }
 
