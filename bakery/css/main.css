@@ -399,6 +399,8 @@ section img {
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 20px 45px 50px 20px;
+  margin-bottom: 5%;
+  text-align: center;
 }
 
 #breakfast .papermenu span {
@@ -406,6 +408,7 @@ section img {
   font-family: Alegreya, serif;
   font-weight: 700;
   color: #56534c;
+  text-align: center;
 }
 
 #breakfast .papermenu img {

@@ -22,10 +22,19 @@
   .carousel-control {
     margin-top: 4%;
   }
+  #breakfast .papermenu span {
+    padding: 6% 15% 0%;
+  }
+  #breakfast .papermenu img {
+    margin: 0;
+  }
+  #breakfast .papermenu a.button-read {
+    margin: 0 auto;
+  }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 1018px) {
+@media only screen and (max-width: 1020px) {
   /**/
   section h2 {
     font-size: 2.1875em;
@@ -109,6 +118,17 @@
   .readyin p span.mins {
     margin: -20% auto 0;
   }
+  #breakfast .papermenu h2 {
+    margin: 1%;
+    font-size: 1.9375em;
+  }
+  #breakfast .papermenu p {
+    margin: 1%;
+    padding: 5%;
+  }
+  #breakfast .papermenu a.button-read {
+    margin: 2% auto;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -131,6 +151,47 @@
   }
   .carousel {
     display: none;
+  }
+  #breakfast .papermenu {
+    padding: 4%;
+  }
+  #breakfast .papermenu h2 {
+    margin: 0;
+    font-size: 1.5625em;
+  }
+  #breakfast .papermenu a.button-read {
+    margin: 0%	auto;
+    padding: 2%;
+  }
+  #breakfast .papermenu span {
+    padding-top: 1%;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+  /**/
+  section p {
+    font-size: 0.875em;
+  }
+  #breakfast .papermenu {
+    padding: 20px 45px 50px 20px;
+  }
+  #breakfast .papermenu span {
+    padding: 6% 21% 0%;
+  }
+  #breakfast .papermenu img {
+    margin: 0 0 10%;
+  }
+  #breakfast .papermenu h2 {
+    margin: 3% 0;
+    font-size: 2.875em;
+  }
+  #breakfast .papermenu p {
+    margin: 7% 0;
+    padding: 5% 10%;
+  }
+  #breakfast .papermenu a.button-read {
+    margin: 13% auto;
   }
 }
 
@@ -183,6 +244,19 @@
   .readyin p span.mins {
     margin: -20% auto 0;
   }
+  #breakfast .papermenu span {
+    padding: 6% 15% 0%;
+  }
+  #breakfast .papermenu img {
+    margin: 0 0 5%;
+  }
+  #breakfast .papermenu h2 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  #breakfast .papermenu a.button-read {
+    margin: 12% auto;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -232,6 +306,26 @@
   .piccakes .vector h3 {
     font-size: 1.0625em;
   }
+  #breakfast .papermenu {
+    width: 110%;
+  }
+  #breakfast .papermenu span {
+    padding: 6% 15% 0%;
+  }
+  #breakfast .papermenu img {
+    margin: 0 0 5%;
+  }
+  #breakfast .papermenu h2 {
+    margin: -1%;
+    font-size: 1.8125em;
+  }
+  #breakfast .papermenu p {
+    margin: 0;
+    padding: 7% 1%;
+  }
+  #breakfast .papermenu a.button-read {
+    margin: 0 auto;
+  }
 }
 
 /* Custom, iPhone Retina */
@@ -256,6 +350,24 @@
   #tastypancakes .pan-panel h2 {
     font-size: 1.5625em;
     margin-top: -13%;
+  }
+  #breakfast .papermenu {
+    width: 110%;
+  }
+  #breakfast .papermenu span {
+    padding: 6% 15% 0%;
+  }
+  #breakfast .papermenu img {
+    margin: 0 0 5%;
+  }
+  #breakfast .papermenu h2 {
+    margin: -3%;
+    font-size: 1.375em;
+  }
+  #breakfast .papermenu p {
+    margin: 0;
+    padding: 7% 1%;
+    font-size: 0.75em;
   }
 }
 
