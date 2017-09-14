@@ -6,7 +6,7 @@ html, body {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 1em;
   overflow-x: hidden;
 }
 
@@ -70,22 +70,22 @@ header {
   margin: 0 auto;
   display: block;
   font-family: Alegreya, serif;
-  font-size: 11px;
+  font-size: 0.6875em;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .nav li {
-  padding-right: 4px;
+  padding-right: 3px;
 }
 
 .nav li a {
   color: #fff;
-  letter-spacing: 2.5px;
+  letter-spacing: 2.4px;
 }
 
 .nav li a span {
-  padding-left: 27px;
+  padding-left: 23px;
 }
 
 .nav li a:hover, .nav li a:focus, .nav li a:visited {
@@ -98,7 +98,6 @@ header {
 
 .social_icons .fa {
   padding-right: 30px;
-  font-size: 17px;
 }
 
 a.button {
@@ -111,7 +110,7 @@ a.button {
 }
 
 .titles h1 {
-  font-size: 92px;
+  font-size: 5.75em;
   font-family: Playfair Display, serif;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -133,7 +132,7 @@ a.button {
 .titles p {
   padding: 35px;
   font-family: Montserrat, sans-serif;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 300;
   line-height: 1.7;
   letter-spacing: 2px;
@@ -141,7 +140,7 @@ a.button {
 
 .titles a.button-menu {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
   background: rgba(86, 83, 76, 0.5);
   border: 1px dashed rgba(255, 255, 255, 0.4);
 }
@@ -163,13 +162,13 @@ section h2, section h3, section h4 {
 
 section h2 {
   padding-top: 2%;
-  font-size: 40px;
+  font-size: 2.875em;
   color: #56534c;
 }
 
 section h4 {
   padding: 5%;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #56534c;
 }
 
@@ -183,7 +182,7 @@ section h5 {
 
 section p {
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 section img {
@@ -192,7 +191,7 @@ section img {
 
 .mainchef span {
   font-family: Alegreya, serif;
-  font-size: 24px;
+  font-size: 1.5em;
   border-top: 1px solid #d7d5ca;
   border-bottom: 1px solid #d7d5ca;
   padding: 10px;
@@ -214,18 +213,18 @@ section img {
   position: absolute;
   width: 210px;
   height: 210px;
-  left: 32%;
+  left: 34%;
   top: 30%;
   z-index: 1;
   text-transform: uppercase;
   font-family: Alegreya, serif;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #d0bf96;
 }
 
 .piccakes .vector h3 {
   position: absolute;
-  top: 40%;
+  top: 42%;
   z-index: 2;
 }
 
@@ -255,6 +254,7 @@ section img {
 #tastypancakes .pan-panel {
   background-image: url(../img/panpan-bg.png);
   background-size: 100%;
+  background-repeat: no-repeat;
   margin-top: 15%;
   text-align: left;
   padding-left: 54%;
@@ -267,11 +267,11 @@ section img {
 }
 
 #tastypancakes .pan-panel h5 {
-  font-size: 13px;
+  font-size: 0.8125em;
 }
 
 #tastypancakes .pan-panel p {
-  font-size: 11px;
+  font-size: 0.6875em;
   padding-top: 30px;
   padding-bottom: 90px;
 }
@@ -295,7 +295,7 @@ section img {
 .carousel-control {
   background-image: none;
   background: none;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: bold;
   color: #b09450;
   border: 1px solid #d0bf96;
@@ -352,11 +352,11 @@ section img {
 .readyin p {
   font-family: Alegreya, serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .readyin p span.bigtext {
-  font-size: 90px;
+  font-size: 5.625em;
   color: #dfc691;
   font-weight: 700;
 }
@@ -398,14 +398,14 @@ section img {
 #breakfast .breakfast-list .menuitem span {
   color: #d0bf96;
   font-family: Alegreya, serif;
-  font-size: 28px;
+  font-size: 1.75em;
 }
 
 #breakfast .papermenu {
   background-image: url(../img/mp-bg.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 20px 45px 20px 20px;
+  padding: 20px 45px 50px 20px;
 }
 
 #breakfast .papermenu span {
@@ -420,19 +420,20 @@ section img {
 }
 
 #breakfast .papermenu h2 {
-  margin: 2% 0;
+  margin: 3% 0;
 }
 
 #breakfast .papermenu p {
-  margin: 12% 0;
+  margin: 7% 0;
+  padding: 5% 10%;
 }
 
 #breakfast .papermenu a.button-read {
   border: 1px solid #9e9c93;
   color: #a47d5e;
   font-weight: 700;
-  font-size: 18px;
-  margin: 17% auto;
+  font-size: 1.125em;
+  margin: 13% auto;
 }
 
 #jibarito {
@@ -461,7 +462,7 @@ section img {
 }
 
 .jib-list .jib-item p {
-  font-size: 13px;
+  font-size: 0.8125em;
 }
 
 .sandwich {
@@ -475,13 +476,13 @@ section img {
 .sandwich a.button-recipe {
   color: #dfc691;
   width: 160px;
-  padding: 12px;
   font-weight: 700;
   background-color: #fff;
   border: 1px dashed #dfc691;
   float: left;
-  margin-left: -10%;
-  margin-top: 300%;
+  position: absolute;
+  left: -1%;
+  bottom: -1%;
 }
 
 .sandwich .readyin {
@@ -492,11 +493,11 @@ section img {
   background: rgba(255, 255, 255, 0.8);
   width: 180px;
   height: 180px;
-  max-width: 200px;
+  max-width: 180px;
 }
 
 .sandwich .readyin span.bigtext {
-  font-size: 70px;
+  font-size: 4.375em;
   color: #56534c;
   margin-bottom: 10px;
 }
@@ -508,7 +509,11 @@ section img {
 }
 
 .sandwich .readyin:first-child {
-  margin-top: -14%;
+  margin-top: -10%;
+}
+
+.sandwich .readyin:first-child span.bigtext {
+  padding: 4% 0;
 }
 
 .sandwich .readyin:last-child {
@@ -517,7 +522,7 @@ section img {
 }
 
 .sandwich .readyin:last-child span.bigtext {
-  font-size: 90px;
+  font-size: 5.625em;
   color: #dfc691;
 }
 
