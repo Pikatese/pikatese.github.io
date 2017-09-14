@@ -381,4 +381,27 @@
   .piccakes .vector h3 {
     font-size: 0.6875em;
   }
+  #breakfast .papermenu {
+    width: 110%;
+    padding-left: 14%;
+  }
+  #breakfast .papermenu span {
+    padding: 6% 15% 0%;
+    font-size: 0.6875em;
+  }
+  #breakfast .papermenu img {
+    margin: 0 0 5%;
+  }
+  #breakfast .papermenu h2 {
+    margin: -3%;
+    font-size: 1.125em;
+  }
+  #breakfast .papermenu p {
+    margin: 0;
+    padding: 5% 0%;
+    font-size: 0.6875em;
+  }
+  #breakfast .papermenu a.button-read {
+    width: 150px;
+  }
 }
