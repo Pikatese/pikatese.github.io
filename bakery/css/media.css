@@ -107,8 +107,8 @@
     margin-top: 7.5px;
   }
   .navbar-nav > li {
-    float: right;
-    text-align: left;
+    float: none;
+    text-align: right;
   }
   .navbar-nav > li a {
     padding-top: 10px;
@@ -162,6 +162,16 @@
   #jibarito .sandwich .readyin:last-child span.bigtext {
     font-size: 3.625em;
   }
+  footer .nav {
+    float: none;
+  }
+  footer .nav li {
+    float: left;
+  }
+  footer .nav li a {
+    letter-spacing: 1.5px;
+    padding-right: 0;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -199,6 +209,12 @@
   #breakfast .papermenu span {
     padding-top: 1%;
   }
+  #bottom-menu-left, #bottom-menu-right {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+  }
 }
 
 @media only screen and (max-width: 756px) {
@@ -227,7 +243,7 @@
     margin: 13% auto;
   }
   #jibarito {
-    padding-bottom: 10%;
+    padding-bottom: 4%;
   }
   #jibarito .sandwich {
     margin-top: 0;
@@ -548,5 +564,20 @@
   }
   #jibarito .sandwich .readyin:last-child span.mins {
     margin-top: -18%;
+  }
+  footer .nav {
+    float: none;
+  }
+  footer .nav li {
+    float: left;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  footer .nav li a {
+    letter-spacing: 0px;
+    padding-right: 0;
+  }
+  footer .nav li:first-child a {
+    padding-left: 0;
   }
 }
