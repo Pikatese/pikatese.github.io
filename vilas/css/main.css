@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700|Poppins|Roboto:400,400i,700");
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  color: #3E3E3E;
+  font-family: "Arvo", serif;
+  text-align: center;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1140px;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  padding-top: 150px;
+}
+
+header {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 1%;
+}
+
+.navbar-header {
+  float: none;
+}
+
+.navbar-toggle {
+  display: block;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-collapse.collapse {
+  display: none !important;
+}
+
+.navbar-nav {
+  float: none !important;
+}
+
+.navbar-nav > li {
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar-nav > li.active {
+  float: left;
+  padding: 0;
+  width: 100px;
+  background-color: #3E3E3E;
+  border-radius: 12px;
+}
+
+.navbar-nav > li.active a {
+  color: #d3d3d3;
+}
+
+.navbar-nav > li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #3E3E3E;
+}
+
+.collapse.in {
+  display: block !important;
+}
+
+.titles p {
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+}
+
+.titles .buttons {
+  padding-bottom: 9%;
+}
+
+.titles .buttons a.button {
+  display: inline-block;
+  padding: 15px 0;
+  margin: 50px 20px;
+  width: 160px;
+  background-color: #3E3E3E;
+  border-radius: 12px;
+  color: #b9b9b9;
+}
