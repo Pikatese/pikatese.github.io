@@ -40,6 +40,11 @@ img {
   margin: 0 auto;
 }
 
+a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
 header {
   background-image: url(../img/header-bg.jpg);
   background-size: cover;
@@ -103,6 +108,15 @@ header img.logo {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #3E3E3E;
+}
+
+.navbar-nav > li a:hover {
+  background-color: transparent;
+  color: #848484;
+}
+
+.navbar-nav > li a:visited, .navbar-nav > li a:focus {
+  background-color: transparent;
 }
 
 .collapse.in {
@@ -244,4 +258,69 @@ p {
 
 .carousel-indicators li.active {
   background: #3E3E3E;
+}
+
+footer {
+  background-color: #d3d3d3;
+  padding: 4% 0 0;
+  text-align: left;
+}
+
+footer ul, footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+
+footer h4 {
+  padding-bottom: 10%;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.8;
+}
+
+footer ul li a {
+  color: #3E3E3E;
+}
+
+footer ul li a:hover {
+  color: #aaa;
+}
+
+footer p {
+  padding-bottom: 5%;
+}
+
+footer .bold {
+  font-weight: 700;
+}
+
+footer .input-group input {
+  border-radius: 10px;
+  line-height: 1.5;
+  height: 40px;
+}
+
+footer .input-group-addon {
+  background-color: #3E3E3E;
+}
+
+footer .input-group-addon a {
+  color: #fff;
+  border-radius: 15px;
+}
+
+footer .input-group-addon a:hover {
+  color: #aaa;
+}
+
+footer .dark {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  background-color: #3E3E3E;
+  padding: 0.1%;
+  margin-top: 3%;
 }
