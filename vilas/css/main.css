@@ -236,16 +236,29 @@ p {
   -ms-transform: translate(-50%, -50%);
 }
 
-#portfolio .masonry .item .middle .text {
+#portfolio .masonry .item .text {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   background-color: #d3d3d3;
-  color: white;
+  width: 100%;
+  text-align: left;
+  padding: 5% 7%;
+  line-height: 1;
+}
+
+#portfolio .masonry .item .text h5 {
+  font-weight: 700;
   font-size: 16px;
-  padding: 16px 32px;
+}
+
+#portfolio .masonry .item .text p {
+  font-style: italic;
 }
 
 #portfolio .item:hover .image {
-  opacity: 0.3;
-  background-color: black;
+  background-color: #000;
 }
 
 #portfolio .item:hover .overlay {
@@ -269,10 +282,9 @@ p {
   display: inline-block;
 }
 
-#portfolio .item:hover .middle .text {
-  vertical-align: bottom;
-  width: 100%;
-  bottom: 0;
+#portfolio .item:hover .text {
+  display: block;
+  z-index: 4;
 }
 
 #portfolio a.seeall {
