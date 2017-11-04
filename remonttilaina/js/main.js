@@ -4,5 +4,6 @@ $(document).ready(function(){
 	    for (i=1000;i<=50000;i=i+1000){
 	        $select.append($('<option></option>').val(i).html(i))
    		}
+   		$("option").append( " €" );
 	});
 });
