@@ -6,7 +6,7 @@ $(document).ready(function(){
    		}
    		$("option").append( " €" );
 	});
-	$(".menu, .formButton").on("click","a", function (event) {
+	$(".menu, .callToAct").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;

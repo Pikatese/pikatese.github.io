@@ -155,7 +155,9 @@ p.copyright {
   width:100%;
 }
 
-.formButton {
-  width:100%;
+.submitButton, .formButton {
+  width:60%;
+  display: block;
+  margin: 0 auto;
 }
 
