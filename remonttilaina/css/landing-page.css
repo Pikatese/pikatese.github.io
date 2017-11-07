@@ -100,7 +100,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .banner {
   padding: 100px 0;
   color: #f8f8f8;
-  background: url(../img/photo4.jpg) no-repeat center center;
+  background: url(../img/photo5.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -150,7 +150,12 @@ footer {
 p.copyright {
   margin: 15px 0 0;
 }
+
 .submitButton {
+  width:100%;
+}
+
+.formButton {
   width:100%;
 }
 
