@@ -161,3 +161,7 @@ p.copyright {
   margin: 5% auto 1%;
 }
 
+.navbar-toggler:focus, .navbar-toggler:visited, .navbar-toggler:active {
+  outline: none;
+}
+
