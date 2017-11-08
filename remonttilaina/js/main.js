@@ -12,4 +12,7 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
+	$(".nav-item").click(function(){
+    $(".navbar-collapse").removeClass("show");
+});
 });
