@@ -8,6 +8,16 @@
   /**/
 }
 
+.navbar-nav li.active {
+  width: 70px;
+}
+
+.navbar-nav > li a {
+  font-size: 13px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px) {
   /**/
@@ -16,6 +26,10 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   /**/
+}
+
+footer {
+  padding: 0;
 }
 
 @media only screen and (max-width: 675px) {
@@ -27,9 +41,42 @@
   /**/
 }
 
+h1 {
+  padding-top: 50px;
+}
+
+.titles p {
+  padding-top: 20px;
+}
+
+a.button {
+  margin: 20px;
+}
+
+#portfolio .masonry .item .text h5, #portfolio .masonry .item .text p {
+  font-size: 10px;
+}
+
+.item p {
+  margin-bottom: 25px;
+}
+
+.carousel-indicators {
+  margin-bottom: 0px;
+}
+
+footer h4 {
+  padding-bottom: 0;
+  padding-top: 4%;
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 375px) {
   /**/
+}
+
+h1 {
+  padding-top: 35px;
 }
 
 /* Custom, iPhone Retina */
