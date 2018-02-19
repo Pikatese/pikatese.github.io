@@ -6,18 +6,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ExSet2</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		a.link-brown:hover {
+			color: brown;
+			text-decoration: none;
+		}
+		tr:nth-of-type(2) {
+			background-color: #ccc;
+			color: #fff;
+		}
+		ul li:last-child {
+			font-style: italic;
+			font-weight: 400;
+		}
+		ol li:first-child {
+			color: brown;
+		}
+	</style>
 </head>
 <body>
 	<header class="header" id="top">
 		<div class="container">
     	<h1>The basic HTML5 page</h1>
-    	<a href="#form-section">Go straignt to fill the form</a>
+    	<a href="#form-section" class="link-brown right">Go straignt to fill the form</a>
     </div>	
   </header>
   <section class="content">
     <div class="container">
     	<h2>Table</h2>
-			<table class="table striped">
+			<table class="table table-striped">
 				<thead>
 					<tr>
 						<th>#</th>
@@ -71,7 +89,7 @@
   <section class="content">
   	<div class="container">
   		<h2>Image</h2>
-  		<img src="https://pp.userapi.com/c638021/v638021544/3b90a/MVE73z8DdBI.jpg" alt="">
+  		<img src="https://pp.userapi.com/c638021/v638021544/3b90a/MVE73z8DdBI.jpg" alt="" class="image">
   	</div>
   </section>
   <section class="content" id="form-section">
@@ -97,7 +115,7 @@
         </div>
         <button type="submit" class="btn btn-primary submitButton">Submit</button>
       </form>
-      <a href="#top">Go back to top</a>
+      <a href="#top" class="right">Go back to top</a>
   	</div>
   </section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
