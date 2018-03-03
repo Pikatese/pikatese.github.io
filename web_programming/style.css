@@ -29,8 +29,11 @@ form {
 .right {
 	float: right;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 	h1 {
 		font-size: 24px;
+	}
+	h2 {
+		font-size: 20px;
 	}
 	}
