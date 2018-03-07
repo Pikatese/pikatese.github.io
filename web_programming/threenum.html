@@ -6,6 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JS</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		table td, table th 	{
+			border: 1px solid #ccc;
+			padding: 5px;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 <h3>JS example</h3>
@@ -20,6 +27,18 @@
 		<input type="button" value="Max" id="max">
 		<h5 id="result"></h5>
 	</form>
+	<table>
+		<tr>
+			<th>SUM</th>
+			<th>AVERAGE</th>
+			<th>MAX</th>
+		</tr>
+		<tr>
+			<td id="sum_res"></td>
+			<td id="avg_res"></td>
+			<td id="max_res"></td>
+		</tr>
+	</table>
 </div>
 <script type="text/javascript">
 	document.getElementById("sum").onclick =(function() {
@@ -29,6 +48,7 @@
 		console.log(one, two, three);
 		sum = Number(one) + Number(two) + Number(three);
 		document.getElementById('result').innerHTML = "The sum of numbers is: "+sum;
+		document.getElementById('sum_res').innerHTML = sum;
 	})
 	document.getElementById("average").onclick =(function() {
 		var one = document.getElementById('one').value;
@@ -36,8 +56,9 @@
 		var three = document.getElementById("three").value;
 		console.log(one, two, three);
 		sum = Number(one) + Number(two) + Number(three);
-		average = sum/3;
-		document.getElementById('result').innerHTML = "The max number is: "+average;
+		avg = sum/3;
+		document.getElementById('result').innerHTML = "The max number is: "+avg;
+		document.getElementById('avg_res').innerHTML = avg;
 	})
 	document.getElementById("max").onclick =(function() {
 		var one = document.getElementById('one').value;
@@ -46,6 +67,7 @@
 		console.log(one, two, three);
 		max = Math.max(Number(one),Number(two),Number(three));
 		document.getElementById('result').innerHTML = "The max number is: "+max;
+		document.getElementById('max_res').innerHTML = max;
 	})
 </script>
 </div>
