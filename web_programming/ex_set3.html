@@ -113,12 +113,21 @@
             <option value="3">3</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary submitButton">Submit</button>
+        <button type="submit" id="submit" class="btn btn-primary submitButton">Submit</button>
       </form>
       <a href="#top" class="right">Go back to top</a>
   	</div>
   </section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		document.getElementById("submit").onclick =(function() {
+		var one = document.getElementById('food').value;
+		if (one.length < 3)
+		{
+			alert("enter food longer than 3 letters!")
+		}
+		});
+	</script>
 </body>
 </html>
