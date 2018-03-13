@@ -125,9 +125,18 @@
 		var one = document.getElementById('food').value;
 		if (one.length < 3)
 		{
-			alert("enter food longer than 3 letters!")
+			alert("Enter food longer than 3 letters!")
+		}
+		else {
+			var letters = /^[a-zA-Z\s]*$/;
+			if(one.match(letters)) {
+			}
+			else {
+				alert("Only letters!");
+			}
 		}
 		});
+		
 	</script>
 </body>
 </html>
