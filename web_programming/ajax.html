@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html land="en">
+	<head>
+		<title>AJAX APP</title>
+		<style>
+			body {
+				padding: 1%;
+				text-align: center;
+			}
+			h2 {
+				text-transform: uppercase;
+			}
+			span {
+				font-size: 20px;
+			}
+			input {
+				margin: 10px;
+				width: 150px;
+			}
+			button, input {
+				padding: 10px;
+				border-radius: 5px;
+				font-size: 16px;
+			}
+			button:hover{
+				background-color: orange;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<header><h2>Momental transform of money</h2></header>
+		<section id="magic">
+			<div><input type="number" placeholder="enter money" min="0.01" id="number"></div>
+			<h5><span class=exchange></span><span class=ed_change></span></h5>
+		<button type="button" id="toEuro">From $ To €</button>
+		<button type="button" id="toDollar">From € To $</button>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$("#toEuro").click(function(e){
+  var request = new XMLHttpRequest();
+  var url = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=ZZCJ6RPDGR6CZGQE";
+  
+  request.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var getinfo = $.getJSON(url, function(result){
+        var exchange = result["Realtime Currency Exchange Rate"];
+        var rate = exchange["5. Exchange Rate"];
+        console.log(rate); 
+        var value = $("#number").val();
+        console.log(value)
+        newvalue = value*rate;
+        $(".exchange").text(newvalue.toFixed(2));
+        console.log(newvalue);
+        
+        $("span.ed_change").text('€');
+      });
+    }
+    }
+  
+  request.open("GET", url, true);
+  request.send();
+});
+$("#toDollar").click(function(e){
+  var request = new XMLHttpRequest();
+  var url = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=EUR&to_currency=USD&apikey=ZZCJ6RPDGR6CZGQE";
+  
+  request.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var getinfo = $.getJSON(url, function(result){
+        var exchange = result["Realtime Currency Exchange Rate"];
+        var rate = exchange["5. Exchange Rate"];
+        console.log(rate); 
+        var value = $("#number").val();
+        console.log(value);
+        newvalue = value*rate;
+        $(".exchange").text(newvalue.toFixed(2));
+        console.log(newvalue);
+        
+        $("span.ed_change").text('$');
+      });
+    }
+    }
+  
+  request.open("GET", url, true);
+  request.send();
+});
+</script>
+
+	</body>
+</html>
