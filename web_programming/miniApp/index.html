@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="EN">
+	<head>
+		<title>Tasty Food</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header id="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>Tasty food receipts</h1>
+						<h4>Search for your receipt!</h4>
+						<div class="input-group" id="mainSearch">
+     					<input type="text" class="form-control" placeholder="Search for food you want to cook" id="query">
+      				<span class="input-group-btn">
+        			<button class="btn btn-default" type="submit" id="search">Go!</button>
+      				</span>
+    				</div>
+					</div>	
+				</div>	
+			</div>
+		</header>
+		<section class="results">
+			<h4>Search results:</h4>
+		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$("#search").click(function(e){
+				$.support.cors = true;
+				 jQuery.support.cors = true;
+				var query = $("#query").val();
+				
+  			var request = new XMLHttpRequest();
+  			var url = "http://www.recipepuppy.com/api/?q="+query+"";
+  			console.log(url);
+  			request.open("GET", url, true);
+  			crossDomain: 'true',
+			  request.send();
+			  request.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200) {
+			      var getinfo = $.getJSON(url, function(result){
+			        var results = result["results"];
+			        console.log(results); 
+			        $(".exchange").text(newvalue.toFixed(2));
+			        console.log(newvalue);
+			        
+			        $("span.ed_change").text('€');
+			      });
+			    }
+			    }
+			  
+
+			});
+		</script>
+	</body>
+</html>

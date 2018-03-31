@@ -1,0 +1,25 @@
+body {
+	background-color: #ccc;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+#banner {
+	background: url(./img/banner.jpg) no-repeat center top/cover;
+	height: 100vh;
+	padding-top: 10%;
+	max-width: 100%;
+  overflow: auto;
+	vertical-align: middle;
+}
+h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 50px;
+}
+h4 {
+	color: #fff;
+}
+#mainSearch {
+	max-width: 600px;
+	margin: 40px auto;
+}
