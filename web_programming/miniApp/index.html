@@ -29,12 +29,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script>
 			$("#search").click(function(e){
-				$.support.cors = true;
-				 jQuery.support.cors = true;
 				var query = $("#query").val();
 				
   			var request = new XMLHttpRequest();
-  			var url = "https://www.recipepuppy.com/api/?q="+query+"";
+  			var url = "https://api.edamam.com/search?q="+query+"&app_id=${f841dce7}&app_key=${c4a258229df59ed531dd6c931b6f8686}";
   			console.log(url);
   			request.open("GET", url, true);
   			crossDomain: 'true',
