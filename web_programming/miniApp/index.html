@@ -31,8 +31,8 @@
 			$("#search").click(function(e){
 				var query = $("#query").val();
 				
-  			/*var request = new XMLHttpRequest();
-  			var url = "https://api.edamam.com/search?q="+query+"&app_id=f841dce7&app_key=c4a258229df59ed531dd6c931b6f8686&jsonp=?";
+  			var request = new XMLHttpRequest();
+  			var url = "https://api.edamam.com/search?q="+query+"&app_id=f841dce7&app_key=c4a258229df59ed531dd6c931b6f8686";
   			//var url = "https://api.edamam.com/recipes/"+query+"";
   			console.log(url);
   			request.open("GET", url, true);
@@ -41,24 +41,24 @@
 			  request.onreadystatechange = function() {
 			    if (this.readyState == 4 && this.status == 200) {
 			      var getinfo = $.getJSON(url, function(result){
-			        var results = result["results"];
-			        console.log(results); 
-			        $(".exchange").text(newvalue.toFixed(2));
-			        console.log(newvalue);
+			      	console.log(result);
+			        var hits = result["hits"];
+			        console.log(hits);
+			        labels=[];
+			        $.each(hits, function(h, item){  
+                label = hits[h]["recipe"]["label"];
+                
+                labels.push(label);
+                //clos_array.push(close);
+
+              });
+			        console.log(labels); 
 			        
-			        $("span.ed_change").text('€');
+			        
 			      });
 			    }
-			    }*/
-			$.ajax({
-type: 'GET',
-url: 'https://api.edamam.com/recipes/cheese',
-dataType: 'jsonp',
-crossDomain: true,
-success: function (data) {
-alert('data = '+data);
-}
-});
+			    }
+			
 
 
 			});
