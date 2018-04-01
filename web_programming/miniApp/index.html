@@ -55,9 +55,11 @@
 				        console.log(hits);
 				        recipes=[];
 				        if (hits.length === 0) {
-				        	$(".recipesBlock").append("No results, try again :)");
+				        	$(".recipesBlock").text("No results, try again :)");
+				        	$(document).scrollTop($(".results").offset().top);
 				        }
 				        else {
+				        	$(".recipesBlock").text("");
 					        $.each(hits, function(h, item){  
 		                label = hits[h]["recipe"]["label"];
 		                image = hits[h]["recipe"]["image"];
