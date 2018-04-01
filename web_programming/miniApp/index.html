@@ -28,6 +28,7 @@
 		</header>
 		<section class="results">
 			<div class="container">
+				<h4></h4>
 				<div class="recipesBlock">
 				</div>
 			</div>	
@@ -36,46 +37,55 @@
 		<script>
 			$("#search").click(function(e){
 				var query = $("#query").val();
-				$(".results .container").prepend("<h4>Search results:</h4>");
-  			var request = new XMLHttpRequest();
-  			var url = "https://api.edamam.com/search?q="+query+"&app_id=f841dce7&app_key=c4a258229df59ed531dd6c931b6f8686";
-  			//var url = "https://api.edamam.com/recipes/"+query+"";
-  			console.log(url);
-  			request.open("GET", url, true);
-  			//crossDomain: 'true',
-			  request.send();
-			  request.onreadystatechange = function() {
-			    if (this.readyState == 4 && this.status == 200) {
-			      var getinfo = $.getJSON(url, function(result){
-			      	console.log(result);
-			        var hits = result["hits"];
-			        console.log(hits);
-			        recipes=[];
-			        $.each(hits, function(h, item){  
-                label = hits[h]["recipe"]["label"];
-                image = hits[h]["recipe"]["image"];
-                lines = hits[h]["recipe"]["ingredientLines"];
-                url = hits[h]["recipe"]["url"];
-                recipes.push({label: label, image: image, lines: lines, url:url});
-                //clos_array.push(close);
+				console.log(query);
+				if (query.length !== 0 && query !== "" && typeof(query) !== undefined) {
+					$(".results .container h4").text("Search results:");
+	  			var request = new XMLHttpRequest();
+	  			var url = "https://api.edamam.com/search?q="+query+"&app_id=f841dce7&app_key=c4a258229df59ed531dd6c931b6f8686";
+	  			//var url = "https://api.edamam.com/recipes/"+query+"";
+	  			console.log(url);
+	  			request.open("GET", url, true);
+	  			//crossDomain: 'true',
+				  request.send();
+				  request.onreadystatechange = function() {
+				    if (this.readyState == 4 && this.status == 200) {
+				      var getinfo = $.getJSON(url, function(result){
+				      	console.log(result);
+				        var hits = result["hits"];
+				        console.log(hits);
+				        recipes=[];
+				        if (hits.length === 0) {
+				        	$(".recipesBlock").append("No results, try again :)");
+				        }
+				        else {
+					        $.each(hits, function(h, item){  
+		                label = hits[h]["recipe"]["label"];
+		                image = hits[h]["recipe"]["image"];
+		                lines = hits[h]["recipe"]["ingredientLines"];
+		                url = hits[h]["recipe"]["url"];
+		                recipes.push({label: label, image: image, lines: lines, url:url});
+		                //clos_array.push(close);
 
-              });
-			        console.log(recipes); 
-			        var recipesBlock = (".recipesBlock");
-			        $.each(recipes, function(i, item) {
-			        	newRecipe = "<div class='col-xs-12 col-sm-3'><div class='recipe'><h4>"+recipes[i].label+"</h4><img src="+recipes[i].image+" alt="+recipes[i].label+"><p class='read'>"+recipes[i].lines+"</p></div></div>"; //<a href='"+url+"' target='_blank'>Instructions</a>
-			        	$(".recipesBlock").append(newRecipe);
-			        });
+		              });
+					        console.log(recipes); 
+					        var recipesBlock = (".recipesBlock");
+					        $.each(recipes, function(i, item) {
+					        	newRecipe = "<div class='col-xs-12 col-sm-3'><div class='recipe'><h4>"+recipes[i].label+"</h4><img src="+recipes[i].image+" alt="+recipes[i].label+"><p class='read'>"+recipes[i].lines+"</p></div></div>"; //<a href='"+url+"' target='_blank'>Instructions</a>
+					        	$(".recipesBlock").append(newRecipe);
+					        });
+				      	}
 
-			      });
-			      	$(".recipesBlock").css("height","300px");
-        			$(document).scrollTop($(".results").offset().top);
-    				
-        			$("body").append("<h5><a href='#banner' style='float: right'>Back to Top</a></h5>");
-			        
-			    }
-			    }
-			
+				      });
+				      	$(".recipesBlock").css("height","300px");
+	        			$(document).scrollTop($(".results").offset().top);
+	    				
+	        			$("body").append("<h5><a href='#banner' style='float: right'>Back to Top</a></h5>");
+				        
+				    }
+				  }
+				}
+				else 
+					alert("Fill the search input :)")
 
 
 			});
