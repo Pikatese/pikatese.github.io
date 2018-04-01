@@ -11,26 +11,30 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h1>Tasty food receipts</h1>
-						<h4>Search for your receipt!</h4>
+						<h1>Tasty food recipes</h1>
+						<h4>What do you want to cook?</h4>
 						<div class="input-group" id="mainSearch">
-     					<input type="text" class="form-control" placeholder="Search for food you want to cook" id="query">
+     					<input type="text" class="form-control" placeholder="Search for food you want to cook" id="query" required>
       				<span class="input-group-btn">
         			<button class="btn btn-default" type="submit" id="search">Go!</button>
       				</span>
     				</div>
+    				<p class="ex">For example: cheese, omelet...</p>
 					</div>	
 				</div>	
 			</div>
 		</header>
 		<section class="results">
-			<h4>Search results:</h4>
+			<div class="container">
+				<div class="recipesBlock">
+				</div>
+			</div>	
 		</section>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script>
 			$("#search").click(function(e){
 				var query = $("#query").val();
-				
+				$(".results .container").prepend("<h4>Search results:</h4>");
   			var request = new XMLHttpRequest();
   			var url = "https://api.edamam.com/search?q="+query+"&app_id=f841dce7&app_key=c4a258229df59ed531dd6c931b6f8686";
   			//var url = "https://api.edamam.com/recipes/"+query+"";
@@ -44,18 +48,29 @@
 			      	console.log(result);
 			        var hits = result["hits"];
 			        console.log(hits);
-			        labels=[];
+			        recipes=[];
 			        $.each(hits, function(h, item){  
                 label = hits[h]["recipe"]["label"];
-                
-                labels.push(label);
+                image = hits[h]["recipe"]["image"];
+                lines = hits[h]["recipe"]["ingredientLines"];
+                url = hits[h]["recipe"]["url"];
+                recipes.push({label: label, image: image, lines: lines, url:url});
                 //clos_array.push(close);
 
               });
-			        console.log(labels); 
-			        
-			        
+			        console.log(recipes); 
+			        var recipesBlock = (".recipesBlock");
+			        $.each(recipes, function(i, item) {
+			        	newRecipe = "<div class='col-xs-12 col-sm-3'><div class='recipe'><h4>"+recipes[i].label+"</h4><img src="+recipes[i].image+" alt="+recipes[i].label+"><p class='read'>"+recipes[i].lines+"</p></div></div>"; //<a href='"+url+"' target='_blank'>Instructions</a>
+			        	$(".recipesBlock").append(newRecipe);
+			        });
+
 			      });
+			      	$(".recipesBlock").css("height","300px");
+        			$(document).scrollTop($(".results").offset().top);
+    				
+        			$("body").append("<h5><a href='#banner' style='float: right'>Back to Top</a></h5>");
+			        
 			    }
 			    }
 			
