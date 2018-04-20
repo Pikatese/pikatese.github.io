@@ -3,10 +3,14 @@ body {
 }
 header {
 	background: url(../img/banner.jpg) no-repeat center bottom/cover;
-}
-h1 {
 	text-align: center;
 	color: #fff;
+}
+h1 {
 	font-size: 50px;
 	font-weight: 600;
+}
+
+select {
+	max-width: 200px;
 }
