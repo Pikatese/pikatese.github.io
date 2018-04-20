@@ -10,7 +10,9 @@ h1 {
 	font-size: 50px;
 	font-weight: 600;
 }
-
+h3, label {
+	margin-top: 20px;
+}
 select {
 	max-width: 200px;
 }
